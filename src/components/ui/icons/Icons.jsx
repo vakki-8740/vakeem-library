@@ -41,6 +41,7 @@ const Mail = (p) => (<svg {...p}><rect x="3" y="5" width="18" height="14" rx="2"
 const Lock = (p) => (<svg {...p}><rect x="4" y="11" width="16" height="10" rx="2" /><path d="M8 11V7a4 4 0 0 1 8 0v4" /></svg>)
 const User = (p) => (<svg {...p}><circle cx="12" cy="8" r="4" /><path d="M4 21a8 8 0 0 1 16 0" /></svg>)
 const Upload = (p) => (<svg {...p}><path d="M12 16V4M7 9l5-5 5 5" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" /></svg>)
+const Download = (p) => (<svg {...p}><path d="M12 3v12M7 10l5 5 5-5" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" /></svg>)
 const Trash = (p) => (<svg {...p}><path d="M3 6h18M8 6V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2M6 6l1 14a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-14" /></svg>)
 const Settings = (p) => (<svg {...p}><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-2.9 1.2V21a2 2 0 1 1-4 0v-.1A1.7 1.7 0 0 0 7 19.4a1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1A1.7 1.7 0 0 0 2.6 14H2.5a2 2 0 1 1 0-4h.1A1.7 1.7 0 0 0 4.6 7a1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1A1.7 1.7 0 0 0 10 2.6V2.5a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 2.9 1.2l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9v.1a1.7 1.7 0 0 0 1.5.9h.1a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5.9z" /></svg>)
 const Grid = (p) => (<svg {...p}><rect x="3" y="3" width="7" height="7" rx="1" /><rect x="14" y="3" width="7" height="7" rx="1" /><rect x="3" y="14" width="7" height="7" rx="1" /><rect x="14" y="14" width="7" height="7" rx="1" /></svg>)
@@ -69,7 +70,7 @@ export const ICONS = {
   menu: Menu, copy: Copy, plus: Plus, minus: Minus, home: Home, filter: Filter, info: Info,
   'alert-triangle': AlertTriangle, 'check-circle': CheckCircle, 'x-circle': XCircle,
   mail: Mail, lock: Lock, user: User, upload: Upload, trash: Trash, settings: Settings,
-  grid: Grid, layers: Layers, message: Message, cart: Cart, shield: Shield,
+  grid: Grid, layers: Layers, message: Message, cart: Cart, shield: Shield, download: Download,
   'credit-card': CreditCard, folder: Folder, image: Image, send: Send, bookmark: Bookmark,
   clock: Clock, logout: Logout, eye: Eye, sliders: Sliders, tag: Tag, pie: Pie, globe: Globe,
   phone: Phone,

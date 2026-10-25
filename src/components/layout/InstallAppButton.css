@@ -1,0 +1,113 @@
+.install-app__trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  height: 40px;
+  padding: 0 11px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--fs-sm);
+  font-weight: 650;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: border-color var(--t-fast), color var(--t-fast), background var(--t-fast);
+}
+.install-app__trigger:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.install-app__trigger:focus-visible,
+.install-app__close:focus-visible,
+.install-app__done:focus-visible {
+  outline: 3px solid var(--accent-soft);
+  outline-offset: 2px;
+}
+.install-app__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: calc(var(--z-modal) + 1);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(8, 12, 24, 0.62);
+  backdrop-filter: blur(5px);
+}
+.install-app__dialog {
+  position: relative;
+  width: min(100%, 410px);
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: var(--card);
+  color: var(--text);
+  box-shadow: var(--shadow-lg);
+  animation: own-pop-in 0.16s ease;
+}
+.install-app__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.install-app__badge {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.install-app__dialog h2 {
+  margin: 0 40px 16px 0;
+  font-size: var(--fs-xl);
+}
+.install-app__dialog ol {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 22px;
+  color: var(--text);
+  line-height: 1.55;
+}
+.install-app__dialog li { padding-left: 3px; }
+.install-app__dialog li::marker { color: var(--accent); font-weight: 700; }
+.install-app__dialog p {
+  margin: 18px 0;
+  color: var(--muted);
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+}
+.install-app__done {
+  width: 100%;
+  min-height: 42px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: var(--on-accent);
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+@media (max-width: 560px) {
+  .install-app__trigger {
+    width: 40px;
+    padding: 0;
+  }
+  .install-app__trigger span { display: none; }
+  .install-app__dialog { padding: 24px 20px; }
+}

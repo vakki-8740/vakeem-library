@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Icon } from '../ui/icons/Icons.jsx'
 import ThemeSwitcher from './ThemeSwitcher'
+import InstallAppButton from './InstallAppButton'
 import { searchCatalog } from '../../data/catalog'
 import { useDebouncedValue } from '../../hooks/useDebouncedValue'
 import './AppTopbar.css'
@@ -79,6 +80,7 @@ export default function AppTopbar({ onMenu }) {
       </form>
 
       <div className="app-topbar__actions">
+        <InstallAppButton />
         <ThemeSwitcher />
       </div>
     </header>

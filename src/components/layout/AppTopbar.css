@@ -65,4 +65,11 @@
 }
 @media (max-width: 560px) {
   .app-topbar__brand { font-size: var(--fs-base); }
+  .app-topbar__search { min-width: 0; }
+  .app-topbar__search input { min-width: 0; padding-right: 8px; }
+  .app-topbar__search input::placeholder { color: transparent; }
+  .app-topbar__actions { gap: 6px; }
+  .app-topbar__actions .theme-switch__label,
+  .app-topbar__actions .theme-switch__trigger > svg:last-child { display: none; }
+  .app-topbar__actions .theme-switch__trigger { width: 40px; justify-content: center; padding: 0; }
 }

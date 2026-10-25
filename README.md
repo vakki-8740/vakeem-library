@@ -15,6 +15,15 @@ npm run build      # production build in dist/
 npm run smoke      # SSR render tests for every component + every route
 ```
 
+## Install on mobile
+
+The app is a Progressive Web App (PWA). Open the deployed HTTPS site on your phone, then:
+
+- **Android / Chrome:** tap **Install** in the top bar, or use Chrome's menu → **Install app**.
+- **iPhone / iPad:** open the site in Safari, tap **Share** → **Add to Home Screen**.
+
+Once added, OWN Library opens in its own app window. The app shell and icons are cached for basic offline startup.
+
 ## What is included
 
 - **70 components, 88 live variants, 12 categories** — see `src/data/catalog.js`
